@@ -1,0 +1,182 @@
+/* =========================================
+DESIGN TOKENS
+Centralised design values
+========================================= */
+
+:root {
+
+/* =========================================
+01. COLORS
+========================================= */
+
+/* Primary */
+--color-primary: #333A73;
+--color-primary-hover: #252B5C;
+
+/* Secondary */
+--color-secondary: #387ADF;
+--color-secondary-hover: #1255B3;
+
+/* Accent */
+--color-accent: #FBA834;
+--color-accent-hover: #E08A10;
+--color-accent-soft: #FEF3E2;
+
+/* Highlight */
+--color-highlight: #50C4ED;
+--color-highlight-hover: #27AED8;
+--color-highlight-soft: #E8F8FD;
+
+/* =========================================
+02. BACKGROUNDS
+========================================= */
+
+--color-bg: #F7F8FB;
+--color-bg-section: #EDF0F5;
+--color-surface: #FFFFFF;
+
+/* Background images */
+--bg-image-1: url("/image/bgcimage.jpg");
+--bg-image-2: url("/image/bgcimgtwo.jpg");
+--bg-image-3: url("/image/bgcimage.jpg");
+
+/* =========================================
+03. TYPOGRAPHY COLORS
+========================================= */
+
+--color-text: #1E2340;
+--color-text-heading: #0D1021;
+--color-text-muted: #5A6580;
+--color-text-inverse: #FFFFFF;
+
+/* =========================================
+04. BORDERS
+========================================= */
+
+--color-border: #DDE3EE;
+--color-border-strong: #333A73;
+
+/* =========================================
+05. TYPOGRAPHY
+========================================= */
+
+/* Font families */
+--font-primary: 'Inter', sans-serif;
+--font-secondary: sans-serif;
+--font-monospace: monospace;
+
+/* Font sizes */
+--text-xs: 0.875rem;
+--text-sm: 1rem;
+--text-md: 1.125rem;
+--text-lg: 1.25rem;
+--text-xl: 1.5rem;
+
+/* Heading sizes */
+--text-h1: 3.2rem;
+--text-h2: 2.4rem;
+--text-h3: 1.8rem;
+--text-h4: 1.4rem;
+
+/* Font weights */
+--weight-regular: 400;
+--weight-medium: 500;
+--weight-semibold: 600;
+--weight-bold: 700;
+
+/* Line heights */
+--line-height-tight: 1.2;
+--line-height-normal: 1.6;
+--line-height-relaxed: 1.8;
+
+/* =========================================
+06. SPACING
+========================================= */
+
+--space-xs: 4px;
+--space-sm: 8px;
+--space-md: 16px;
+--space-lg: 24px;
+--space-xl: 32px;
+--space-2xl: 48px;
+--space-3xl: 64px;
+--space-4xl: 96px;
+
+/* =========================================
+07. LAYOUT
+========================================= */
+
+--container-max: 1200px;
+--container-padding: 5%;
+
+--content-max: 100%;
+
+--section-padding-y: 96px;
+--section-padding-x: 0px;
+
+/* =========================================
+08. BORDER RADIUS
+========================================= */
+
+--radius-sm: 6px;
+--radius-md: 14px;
+--radius-lg: 20px;
+--radius-full: 999px;
+
+/* =========================================
+09. SHADOWS
+========================================= */
+
+--shadow-sm: 0 2px 6px rgba(51, 58, 115, 0.06);
+--shadow-md: 0 6px 18px rgba(51, 58, 115, 0.10);
+--shadow-lg: 0 12px 32px rgba(51, 58, 115, 0.14);
+
+/* =========================================
+10. BUTTONS
+========================================= */
+
+/* Dimensions */
+--btn-primary-height: 60px;
+--btn-primary-min-width: 200px;
+
+--btn-secondary-height: 60px;
+--btn-secondary-min-width: 180px;
+
+--btn-mobile-min-width: 100%;
+
+/* Padding */
+--btn-padding-y: 0px;
+--btn-padding-x: 28px;
+
+/* Typography */
+--btn-font-size: 1rem;
+--btn-font-weight: 600;
+
+/* Radius */
+--btn-radius: var(--radius-md);
+
+/* =========================================
+11. TRANSITIONS
+========================================= */
+
+--transition-fast: 0.2s ease;
+--transition-normal: 0.3s ease;
+--transition-slow: 0.5s ease;
+
+/* =========================================
+12. SEMANTIC ALIASES
+========================================= */
+
+--color-background: var(--color-bg);
+--color-background-section: var(--color-bg-section);
+
+--color-heading: var(--color-text-heading);
+--color-body: var(--color-text);
+--color-muted: var(--color-text-muted);
+
+--color-link: var(--color-secondary);
+--color-link-hover: var(--color-secondary-hover);
+
+--color-outline: var(--color-secondary);
+
+}

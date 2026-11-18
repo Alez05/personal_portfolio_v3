@@ -1,0 +1,149 @@
+/* =========================================
+LAYOUT
+Reusable structural layouts
+========================================= */
+
+/* =========================================
+
+1. CONTAINER
+    ========================================= */
+
+.container {
+width: 100%;
+max-width: var(--container-max);
+
+margin-inline: auto;
+padding-inline: var(--container-padding);
+}
+
+/* =========================================
+02. CONTENT WRAPPER
+========================================= */
+
+.content-wrapper {
+width: 100%;
+max-width: var(--content-max);
+
+margin-inline: auto;
+}
+
+/* =========================================
+03. SECTIONS
+========================================= */
+
+.section {
+width: 100%;
+
+padding-block: var(--section-padding-y);
+padding-inline: var(--section-padding-x);
+}
+
+/* =========================================
+04. SECTION BACKGROUNDS
+========================================= */
+
+.section-light {
+background-color: var(--color-bg);
+}
+
+.section-muted {
+background-color: var(--color-bg-section);
+}
+
+.section-white {
+background-color: var(--color-surface);
+}
+
+/* =========================================
+05. RESPONSIVE VISIBILITY
+========================================= */
+
+.mobile-only {
+display: block;
+}
+
+.tablet-only,
+.desktop-only {
+display: none;
+}
+
+/* =========================================
+06. RESPONSIVE BREAKPOINTS
+========================================= */
+
+/* Mobile: 0–599px */
+
+@media (max-width: 599px) {
+
+:root {
+--container-padding: 6%;
+--section-padding-y: 64px;
+}
+
+}
+
+/* Tablet: 600–768px */
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+:root {
+--container-padding: 5%;
+--section-padding-y: 72px;
+}
+
+.mobile-only {
+display: none;
+}
+
+.tablet-only {
+display: block;
+}
+
+}
+
+/* Laptop / Small Desktop: 769–1199px */
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+:root {
+--container-padding: 5%;
+--section-padding-y: 80px;
+}
+
+.mobile-only {
+display: none;
+}
+
+.desktop-only {
+display: block;
+}
+
+}
+
+/* Large Desktop: 1200–1599px */
+
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+.mobile-only {
+display: none;
+}
+
+.desktop-only {
+display: block;
+}
+
+}
+
+/* Wide Desktop: 1600px+ */
+
+@media (min-width: 1600px) {
+
+.mobile-only {
+display: none;
+}
+
+.desktop-only {
+display: block;
+}
+
+}

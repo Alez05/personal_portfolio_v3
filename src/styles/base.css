@@ -1,0 +1,175 @@
+/* =========================================
+BASE STYLES
+Global element defaults
+========================================= */
+
+/* =========================================
+
+1. RESET
+    ========================================= */
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+/* =========================================
+02. DOCUMENT
+========================================= */
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 90px;
+}
+
+body {
+min-height: 100vh;
+
+font-family: var(–font-primary);
+font-size: var(–text-sm);
+font-weight: var(–weight-regular);
+line-height: var(–line-height-normal);
+
+background-color: var(–color-background);
+color: var(–color-body);
+
+overflow-x: hidden;
+}
+
+/* =========================================
+03. TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+color: var(–color-heading);
+font-weight: var(–weight-bold);
+line-height: var(–line-height-tight);
+}
+
+h1 {
+font-size: var(–text-h1);
+}
+
+h2 {
+font-size: var(–text-h2);
+}
+
+h3 {
+font-size: var(–text-h3);
+}
+
+h4 {
+font-size: var(–text-h4);
+}
+
+p {
+color: inherit;
+}
+
+small {
+font-size: var(–text-xs);
+}
+
+strong,
+b {
+font-weight: var(–weight-bold);
+}
+
+/* =========================================
+04. MEDIA
+========================================= */
+
+img,
+picture,
+video,
+canvas,
+svg {
+display: block;
+max-width: 100%;
+}
+
+img,
+video {
+height: auto;
+}
+
+/* =========================================
+05. FORMS & BUTTONS
+========================================= */
+
+button,
+input,
+textarea,
+select {
+font: inherit;
+}
+
+button {
+cursor: pointer;
+}
+
+button:disabled {
+cursor: not-allowed;
+}
+
+/* =========================================
+06. LISTS
+========================================= */
+
+ul,
+ol {
+list-style-position: inside;
+}
+
+/* =========================================
+07. LINKS
+========================================= */
+
+a {
+color: var(–color-link);
+text-decoration: none;
+transition: color var(–transition-fast);
+}
+
+a:hover {
+color: var(–color-link-hover);
+}
+
+/* =========================================
+08. ACCESSIBILITY
+========================================= */
+
+:focus-visible {
+outline: 2px solid var(–color-outline);
+outline-offset: 4px;
+}
+
+::selection {
+background-color: var(–color-primary);
+color: var(–color-text-inverse);
+}
+
+/* =========================================
+09. MOTION PREFERENCES
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+*,
+*::before,
+*::after {
+scroll-behavior: auto !important;
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+
+}
